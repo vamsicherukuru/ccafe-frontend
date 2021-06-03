@@ -57,3 +57,52 @@ function displayHost() {
   mainBody.style.opacity = '0';
   mainBody.style.transition = '0.3s';
 }
+
+var subjectObject = {
+  Food: ['Baking', 'Cooking', 'Catering'],
+  Fitness: [
+    'Fitness',
+    'Beauty Care',
+    'Organic',
+    'Personal Growth',
+    'Medical Clinic',
+    'Sports Management',
+  ],
+  Tuition: ['Tuition'],
+  Business: ['Management'],
+  Home: [
+    'Home Rental',
+    'Home Maintenance',
+    'Laundry',
+    'Interiors',
+    'Energy & Waste',
+    'Plant Nursery',
+    'Art & Craft',
+  ],
+  Fashion: ['Clothing', 'Accessories'],
+  Travel: ['Travel Agency', 'Car Rental', 'Car Maintenance'],
+  Events: ['Entertainment'],
+  Care: ['Elder Care', 'Child Care', 'Pet Care'],
+};
+window.onload = function () {
+  var subjectSel = document.getElementById('subject');
+  var topicSel = document.getElementById('topic');
+  var chapterSel = document.getElementById('chapter');
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function () {
+    //empty Chapters- and Topics- dropdowns
+    topicSel.length = 1;
+    //display correct values
+    var z = subjectObject[this.value];
+    for (var i = 0; i < z.length; i++) {
+      topicSel.options[topicSel.options.length] = new Option(z[i], z[i]);
+    }
+  };
+  topicSel.onchange = function () {
+    //empty Chapters dropdown
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+  };
+};
