@@ -49,7 +49,7 @@
 	padding: 0 0 0 34px;
 	position: relative;
 	-webkit-transition: width 400ms ease, background 400ms ease;
-	transition:         width 400ms ease, background 400ms ease;
+	transition: width 400ms ease, background 400ms ease;
 	width: 0;  
 }
 #express-form-typeahead:focus {
