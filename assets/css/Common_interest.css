@@ -317,11 +317,17 @@ i .fas fa-bars {
   #hero .enter {
     width: 80%;
   }
+  .enter .enter-container {
+    width: 100%;
+  }
   #hero .enter img {
     width: 100%;
   }
+  #hero div.enter div.interest-dropdown {
+    width: 100%;
+  }
 }
-#hero .enter a {
+#hero .enter a.title-links {
   background-color: rgba(255, 255, 255, 0.51);
   color: #1d3558;
   padding: 5px;
@@ -332,6 +338,7 @@ i .fas fa-bars {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   width: fit-content;
+  pointer-events: none;
 }
 #hero .enter:hover {
   transform: scale(1.05);
@@ -447,6 +454,45 @@ span.feed-title {
   .interest-title-container input {
     font-size: 6vw;
   }
+}
+
+div.interest-dropdown {
+  border-radius: 20px;
+  background-color: #acd9ff;
+  height: 210px;
+  width: 210px;
+  transition: all 0.3s ease-in-out;
+  padding: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  padding: 8px;
+  display: block;
+  text-align: center;
+}
+div.interest-dropdown a.category-links {
+  font-size: 16pt;
+  color: #1d3558;
+}
+div.interest-dropdown a.category-links:hover {
+  font-size: 18pt;
+  color: #ff5757;
+}
+div.enter-container {
+  border-radius: 20px;
+  background-color: #fd9f9f;
+  height: 210px;
+  width: 210px;
+  transition: all 0.3s ease-in-out;
+  padding: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.enter div.enter-container:hover {
+  opacity: 0;
+  /* pointer-events: none; */
 }
 
 /*--------------------------------------------------------------
@@ -690,20 +736,33 @@ button {
 }
 
 @media (max-width: 500px) {
-  .group table td {
-    padding: 5px !important;
-    font-size: 18px !important;
+  div.group {
+    margin: 0;
+  }
+  #create-container {
+    margin: 0;
+  }
+  #create-container form {
+    font-size: 12pt;
+  }
+  #create-container form select {
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 
-  .group table input {
-    height: 25px;
-    margin-left: 10%;
-    align-self: center;
-    font-size: 12px;
+  #create-container table td {
+    font-size: 12pt;
+    margin: 0;
+  }
+  #create-container input {
+    height: 24px;
+    margin: 0;
   }
 }
-
-/* ======Category dropdown======== */
+input #img.group-logo {
+  color: red;
+}
 
 .group form {
   padding: 15px;
@@ -731,6 +790,13 @@ button {
   padding: 0 20px 0 20px;
   border: none;
   background-color: #acd9ff;
+}
+#create-container table tr td input#file-upload-button {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  border: none;
+  background-color: #acd9ff;
+  font-size: 12pt;
 }
 
 #create-container button:hover {
