@@ -78,3 +78,10 @@
   if ($(window).scrollTop() > 100) {
     $('#headers').addClass('header-scrolled');
   }
+
+
+  // Services which are not available
+  $("[id='not-available']").hover(
+    function(){    $("[id='na-text']").show();                }, 
+    function(){    $("[id='na-text']").css("display","none"); }
+  );
