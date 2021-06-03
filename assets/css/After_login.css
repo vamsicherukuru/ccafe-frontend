@@ -781,7 +781,7 @@ input[type="search"] {
   width: 100%;
 }  
   @media (max-width:1000px) {
-    ul.tabs li
+    .services ul.tabs li
     {
         width: 40vw;
     }
@@ -795,7 +795,7 @@ input[type="search"] {
     }
     
   }
-  ul.tabs {
+  .services ul.tabs {
     float: left;
     list-style: none;
     height: 32px;
@@ -804,7 +804,7 @@ input[type="search"] {
     padding: 0;
     overflow: visible !important;
   }
-  ul.tabs li {
+  .services ul.tabs li {
     float: left;
     height: 33px;
     line-height: 31px;
@@ -816,12 +816,12 @@ input[type="search"] {
   }
 
   @media (max-width: 1000px) {
-    .services ul.tabs li, a
+    .services ul.tabs li,  .services a
     {
       width: 20%;
       font-size: 12px;
     }
-    ul.tabs li a
+    .services ul.tabs li a
     {
       padding-left: 3px !important;
     }
@@ -831,7 +831,7 @@ input[type="search"] {
   .academic .aside.right li {
     list-style: none;
   }
-  ul.tabs li a {
+  .services ul.tabs li a {
     text-decoration: none;
     color: white;
     display: block;
@@ -839,7 +839,7 @@ input[type="search"] {
     padding: 0 40px;
   }
 
-    ul.tabs li :active
+  .services ul.tabs li :active
   {
     background-color: black;
     border:2px solid #1D3558;
@@ -885,13 +885,13 @@ input[type="search"] {
     margin-right: auto;
   }
 
-  .tab_content h3 {
+  .services .tab_content h3 {
     margin-top: 0;
     padding-top: 0;
     color:#fff;
   }
   
-  .tab_content ul li {
+  .services .tab_content ul li {
     margin: 5px 0 0;
     padding-bottom: 5px;
   }
@@ -1104,10 +1104,10 @@ input[type="search"] {
     z-index: 9999;
     color:#FF5757;
     font-weight: bolder;
-    font-size:18px;
+    font-size:22px;
     font-family: 'Advent Pro';
     background-color: white;
-    opacity: 60%;
+    opacity: 80%;
     padding:3px;
     border-radius: 10px;
     text-align: center;
