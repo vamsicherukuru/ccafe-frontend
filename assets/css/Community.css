@@ -1,0 +1,19 @@
+#Join
+{
+    margin-top: 100px;
+
+}
+
+#communityName
+{
+    min-width: 40%;
+    background-color: lightblue;
+}
+
+ select + option
+{
+    background-color: #ADD8E6;
+    background: linear-gradient(to bottom, #ADD8E6, #1d325e)
+}
+
+

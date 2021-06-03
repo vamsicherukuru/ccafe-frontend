@@ -44,6 +44,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/Before_login.css" rel="stylesheet">
+  <link href="assets/css/Community.css" rel="stylesheet">
 
 </head>
 
@@ -66,7 +67,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="Login.html" class="get-started-btn scrollto">LOGOUT</a>
+      <a href="Login.html" class="get-started-btn">LOGOUT</a>
 
     </div>
   </header><!-- End Header -->
@@ -78,27 +79,32 @@
   <main id="main">
 
     <section id="Join" class="d-flex align-items-center ">
-      <div class="container" data-aos="fade-up">
+      <div class="container Join" data-aos="fade-up">
   
         <div class="section-title">
           <h2>Join Our Community</h2>
           <p>Please join a community to enjoy the services</p><br>
-  
-
         </div>
-    
-        <div>
-          <h3>Community Name</h3>
-          <select name="communityName" class="get-started-btn scrollto" id="communityName">
-          <optgroup label="Name">
-          <option value="State_k">Kormangala</option>
-          <option value="Karnataka">JPnagar</option>
-          <option value="Somewhere">SomeWhere</option>
-          </optgroup>
-          </select><br>
-          <button class="get-started-btn scrollto">Request To  Join</button>
-          <button class="get-started-btn scrollto">Already a Member?</button>
-        <br>
+        
+        <div class="container-fluid">
+          <table>
+            <tr>
+            <th> <h5>Choose Community</h5> </th>
+            <th> <select name="communityName" class="get-started-btn" id="communityName">
+              <option selected> ----------</option>
+              <option value="State_k">Kormangala-560024</option>
+              <option value="Karnataka">JPnagar</option>
+              <option value="Somewhere">SomeWhere</option>
+              </select> </th>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td colspan="2" style="float:right;"> <button class="get-started-btn ">Request To Join</button></td>
+          </tr>
+          </table>
+
+
 
         </div>
 
@@ -110,14 +116,29 @@
 
       <div class="section-title">
         <h2>Create Your Own Community</h2>
-        <p>Can't Find Your Community</p><br>
-         Create One For Your Area..
-        <button class="get-started-btn scrollto">Create New</button>
+        <p>Can't Find Your Community</p>
       </div>
   
-      <div>
+      <div class="container-fluid">
+        <table>
+          <tr>
+          <th> <h5>Choose Community</h5> </th>
+          <th> <select name="communityName" class="get-started-btn" id="communityName">
+            <option selected> ----------</option>
+            <option value="State_k">Kormangala-560024</option>
+            <option value="Karnataka">JPnagar</option>
+            <option value="Somewhere">SomeWhere</option>
+            </select> </th>
+        </tr>
 
-        
+        <tr>
+          <td></td>
+          <td colspan="2" style="float:right;"> <button class="get-started-btn ">Request To Join</button></td>
+        </tr>
+        </table>
+
+
+
       </div>
 
 </section>     
