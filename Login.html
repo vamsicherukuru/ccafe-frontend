@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Community Cafe - Login</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+  <link rel="stylesheet" href="assets/css/Login.css">
+
+</head>
+<body>
+<div class="close-icon" ><a href="javascript:history.back()"><img src="assets/img/close.png"  width="40px" height="40px"></a></div>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form id="regForm" action="Homepage_after_login.html">
+
+			<h1>Register</h1>
+			
+			<!-- One "tab" for each step in the form: -->
+			<div class="tab">Personal Details
+			  <p><input placeholder="First name" oninput="this.className = ''"></p>
+			  <p><input placeholder="Last name" oninput="this.className = ''"></p>				
+			  <p><input type="email" placeholder="Email ID" oninput="this.className = ''"></p>	
+			  <p><input placeholder="Username" oninput="this.className = ''"></p>
+			  <p><input placeholder="Password" oninput="this.className = ''"></p>
+			</div>
+			
+			<div class="tab">Contact & Address Details
+				<p><input type="number" placeholder="Phone Number" oninput="this.className = ''"></p>	
+				<p><input placeholder="House Number" oninput="this.className = ''"></p>
+				<p><select name="area" id="area">
+					<option value="" disabled selected hidden>Area Name</option>
+					<option value="560074">560074-Kanminake</option>
+					<option value="560026">560026-Chamrajpet</option>
+					<option value="560074">560074-Kanminake</option>
+					<option value="560026">560026-Chamrajpet</option>
+				  </select></p>
+
+			  <p><input placeholder="City Name" oninput="this.className = ''"></p>
+			  <p><input placeholder="State Name" oninput="this.className = ''"></p>
+			</div>
+			
+			<div class="tab"> Profile Picture<Picture></Picture>
+			  <p><input type='file' placeholder="Profile Pic" onchange="readURL(this);" /></p>
+			  <p><img id="profilepic" src="http://placehold.it/180" alt="your image" /></p>
+			</div>
+			
+			<div class="tab">Verification
+			  <p><input placeholder="Enter OTP" oninput="this.className = ''"></p>			  
+			  <p><input type="checkbox" oninput="this.className = ''" placeholder="I Agree to all">I Agree to all <a href="#"> Terms & Condition</a></p>
+			</div>
+			
+			<div style="overflow:auto;">
+			  <div style="float:right;">
+				<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button><br>
+				<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			  </div>
+			</div>
+			
+			<!-- Circles which indicates the steps of the form: -->
+			<div style="text-align:center;margin-top:40px;">
+			  <span class="step"></span>
+			  <span class="step"></span>
+			  <span class="step"></span>
+			  <span class="step"></span>
+			</div>
+			
+			</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="Homepage_after_login.html">
+			<h1>Sign in</h1><br><br>
+			<input type="email" style = "margin: 8px 0px" placeholder="Email" />
+			<input type="password" style = "margin: 8px 0px"  placeholder="Password" />
+			<a href="#">Forgot your password!</a><br><br>
+			<button >Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn" >Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script  src="assets/js/login.js"></script>
+
+</body>
+</html>

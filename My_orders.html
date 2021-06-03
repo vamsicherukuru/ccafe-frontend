@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-sale=1.0" name="viewport" />
+
+    <title>Community Cafe</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet"/>
+   
+    <!-- Vendor CSS Files -->
+    
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/My_orders.css">
+
+
+
+    <script>
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
+</head>
+
+<body>
+
+    <!-- ======= Side Panel======= -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="Homepage_after_login.html">HOME</a>
+      <a href="Giveback.html">GIVE BACK</a>
+      <a href="Marketplace.html">MARKETPLACE</a>
+      <a href="Ecommerce.html">E-COMMERCE</a>
+      <a href="Neighbourhood.html">NEIGHBOURHOOD</a>
+      <a href="Common_interest.html">COMMON INTEREST</a>
+    </div>
+  
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+    
+          <!--<h1 class="logo mr-auto"><a href="index.html">CCafe</a></h1>-->
+          <a href="Homepage_after_login.html" class="logo mr-auto"><img src="assets/img/cclogo.png" alt="" class="img-fluid"></a>
+          <a href="#" class=" mr-auto burger " style="left:-36%;" onclick="openNav()">
+            <span></span></a>
+  
+              <nav class="nav-menu ">
+                <ul>
+                  <li>
+                    <input type="text" placeholder="Search Community Cafe Marketplace" class="searchbar"/ >
+                    <div class="search"></div>
+                  </li>
+                  <li><a href="Cart.html"><i class="fa fa-shopping-cart circle-icon" style="color:white"></i> </a>   </li>
+                  <li><a href="Profile.html"><i class="fa fa-user circle-icon" style="color:white"></i>         </a>    </li>      
+                </ul>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column" style="background-color: #1D3558;">
+                    <h3>Home Business</h3>
+                    <a href="#">Food</a>
+                    <a href="#">Fitness</a>
+                    <a href="#">Arts & Crafts</a>
+                  </div>
+                  <div class="column" style="background-color: #FF5757;">
+                    <h3>Domestic</h3>
+                    <a href="#">Cook</a>
+                    <a href="#">Driver</a>
+                    <a href="#">Gardener</a>
+                  </div>
+                </div>
+              </div>
+              
+            </nav><!-- .nav-menu -->          
+      </div>
+    </header><!-- End Header -->
+  
+   <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css"
+    />
+
+
+
+    
+  <!-- MAIN CONTNET -->
+  <div class="container-xl">
+      <div class="table-responsive">
+          <div class="table-wrapper">
+              <div class="table-title">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <h2>Order <b>Details</b></h2>
+                      </div>
+                      <div class="col-md-6">						
+                          <a href="#" class="btn btn-primary"><i class="material-icons">&#xE863;</i> <span>Refresh List</span></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="table-filter">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <div class="show-entries">
+                              <span>Show</span>
+                              <select class="form-control">
+                                  <option>5</option>
+                                  <option>10</option>
+                                  <option>15</option>
+                                  <option>20</option>
+                              </select>
+                              <span>entries</span>
+                          </div>
+                      </div>
+                      <div class="col-sm-9">
+                          <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                          <div class="filter-group">
+                              <label>Name</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="filter-group">
+                              <label>Location</label>
+                              <select class="form-control">
+                                  <option>All</option>
+                                  <option>Location 1</option>
+                                  <option>Location 2</option>
+                                  <option>Location 3</option>
+                                  <option>Location 4</option>
+                                  <option>Location 5</option>								
+                              </select>
+                              </div>
+                          <div class="filter-group">
+                              <label>Status</label>
+                              <select class="form-control">
+                                  <option>Any</option>
+                                  <option>Delivered</option>
+                                  <option>Shipped</option>
+                                  <option>Pending</option>
+                                  <option>Cancelled</option>
+                              </select>
+                          </div>
+                          <span class="filter-icon"><i class="fa fa-filter"></i></span>
+                      </div>
+                  </div>
+              </div>
+              <table class="table table-striped table-hover">
+                  <thead>
+                      <tr>
+                          <th>#</th>
+                          <th>Items</th>
+                          <th>Location</th>
+                          <th>Order Date</th>						
+                          <th>Status</th>						
+                          <th>Net Amount</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td><a href="#"><img src="assets/img/Cart/1.png" class="rounded-circle" alt="Avatar"> Product 1</a></td>
+                          <td>Location 1</td>
+                          <td>Jun 15, 2021</td>                        
+                          <td><span class="status text-success">&bull;</span> Delivered</td>
+                          <td>₹254</td>
+                          <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i class="material-icons">&#xE5C8;</i></a></td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td><a href="#"><img src="assets/img/Cart/Embroidery.jpg" class="rounded-circle" alt="Avatar"> Product 2</a></td>
+                          <td>Location 2</td>                       
+                          <td>Jun 21, 2021</td>
+                          <td><span class="status text-info">&bull;</span> Shipped</td>
+                          <td>₹1,260</td>
+                          <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i class="material-icons">&#xE5C8;</i></a></td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td><a href="#"><img src="assets/img/Cart/Cupcake.jpg" class="rounded-circle" alt="Avatar">Product 1</a></td>
+                          <td>Location 3</td>
+                          <td>Jul 04, 2021</td>
+                          <td><span class="status text-danger">&bull;</span> Cancelled</td>
+                          <td>₹350</td>
+                          <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i class="material-icons">&#xE5C8;</i></a></td>                        
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td><a href="#"><img src="assets/img/Cart/knitted-sweater.jpg" class="rounded-circle" alt="Avatar"> Product 3</a></td>
+                          <td>Location 4</td>
+                          <td>Jul 16, 2021</td>						
+                          <td><span class="status text-warning">&bull;</span> Pending</td>
+                          <td>₹1,572</td>
+                          <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i class="material-icons">&#xE5C8;</i></a></td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td><a href="#"><img src="assets/img/Cart/orange-juice.jpg" class="rounded-circle" alt="Avatar">Product 4</a></td>
+                          <td>Location 5</td>
+                          <td>Aug 04, 2021</td>
+                          <td><span class="status text-success">&bull;</span>Delivered</td>
+                          <td>₹580</td>
+                          <td><a href="#" class="view" title="View Details" data-toggle="tooltip"><i class="material-icons">&#xE5C8;</i></a></td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div class="clearfix">
+                  <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                  <ul class="pagination">
+                      <li class="page-item disabled"><a href="#">Previous</a></li>
+                      <li class="page-item"><a href="#" class="page-link">1</a></li>
+                      <li class="page-item"><a href="#" class="page-link">2</a></li>
+                      <li class="page-item"><a href="#" class="page-link">3</a></li>
+                      <li class="page-item active"><a href="#" class="page-link">4</a></li>
+                      <li class="page-item"><a href="#" class="page-link">5</a></li>
+                      <li class="page-item"><a href="#" class="page-link">6</a></li>
+                      <li class="page-item"><a href="#" class="page-link">7</a></li>
+                      <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>        
+  </div>     
+
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="container footer-bottom clearfix">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CCafe</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by CC-Team</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+ <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+  
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

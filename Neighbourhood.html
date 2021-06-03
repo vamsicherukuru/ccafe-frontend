@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Community Cafe</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' rel='stylesheet'>
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/Neighbourhood.css">
+  <link href="assets/css/Feeds.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Side Panel======= -->
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
+
+  <a id="accordionSidebar">
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
+        <a class="nav-link" href="#feeds">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Discussion Board</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Interface
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+            aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Components</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Components:</h6>
+                <a class="collapse-item" href="">Chat</a>
+                <a class="collapse-item" href="">Others</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>Utilities</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Utilities:</h6>
+                <!-- <a class="collapse-item" href="utilities-color.html">Chat</a> -->
+                <a class="collapse-item" href="">Helpdesk</a>
+                <a class="collapse-item" href="">Facilities</a>
+                <a class="collapse-item" href="">Other</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Addons
+    </div>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Directory</span></a>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+            aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Archives</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Feedback</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+        <a href="Giveback.html">GIVE BACK</a>
+        <a href="Marketplace.html">MARKETPLACE</a>
+        <a href="Ecommerce.html">E-COMMERCE</a>
+        <a href="Neighbourhood.html">NEIGHBOURHOOD</a>
+        <a href="Common_interest.html">COMMON INTEREST</a>
+
+  </a>
+  </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+  
+        <!--<h1 class="logo mr-auto"><a href="index.html">CCafe</a></h1>-->
+        <a href="index.html" class="logo mr-auto"><img src="assets/img/cclogo.png" alt="" class="img-fluid"></a>
+        <a href="#" class=" mr-auto burger " style="left:-36%;" onclick="openNav()">
+          <span></span></a>
+
+            <nav class="nav-menu ">
+              <ul>
+                <li>
+                  <input type="text" placeholder="Search Community Cafe Marketplace" class="searchbar"/ >
+                  <div class="search"></div>
+                </li>
+                <li><a href="Cart.html"><i class="fa fa-shopping-cart circle-icon" style="color:white"></i> </a>   </li>
+                <li><a href="Profile.html"><i class="fa fa-user circle-icon" style="color:white"></i>         </a>    </li>       
+              </ul>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column" style="background-color: #1D3558;">
+                    <h3>Home Business</h3>
+                    <a href="#">Food</a>
+                    <a href="#">Fitness</a>
+                    <a href="#">Arts & Crafts</a>
+                  </div>
+                  <div class="column" style="background-color: #FF5757;">
+                    <h3 style="color: #1D3558;">Domestic</h3>
+                    <a href="#">Cook</a>
+                    <a href="#">Driver</a>
+                    <a href="#">Gardener</a>
+                  </div>
+                </div>
+              </div>
+              
+            </nav><!-- .nav-menu -->          
+      </div>
+    </header><!-- End Header -->
+  
+<main id="main">
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid Bulletin">
+
+                  <!-- Page Heading -->
+                  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                      <h1 >Bulletin</h1>
+                  </div>
+
+                  <!-- Content Row -->
+                  <div class="row">
+
+                      <!-- Events Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-primary shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                              Events</div>
+                                          <div class="h5 mb-0 font-weight-bold text-gray-800">Birth / Jubiless</div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-calendar-alt fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Alerts Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-success shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                              Alerts</div>
+                                          <div class="h5 mb-0 font-weight-bold text-gray-800">Emergency / Announcement</div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-bullhorn fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- Request Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-info shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                              Request</div>
+                                              <div class="h5 mb-0 font-weight-bold text-gray-800">Blood Donation / Financial / Covid</div>
+                                          </div>
+                                          <div class="col-auto">
+                                              <i class="fas fa-hand-holding-heart fa-2x text-gray-300"></i>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                      <!-- Pending Requests Card Example -->
+                      <div class="col-xl-3 col-md-6 mb-4">
+                          <div class="card border-left-warning shadow h-100 py-2">
+                              <div class="card-body">
+                                  <div class="row no-gutters align-items-center">
+                                      <div class="col mr-2">
+                                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                              Community Speak</div>
+                                          <div class="h5 mb-0 font-weight-bold text-gray-800">Causes</div>
+                                      </div>
+                                      <div class="col-auto">
+                                          <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Content Row Feeds -->
+
+                  <div class="row">
+
+                      <!-- Area Chart -->
+                      <div class="col-xl-12 col-lg-12 feeds" id="feeds">
+                          <div class="card shadow mb-4">
+                              <!-- Card Header - Dropdown -->
+                              <div
+                                  class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                  <h3 class=" font-weight-bold ">Discussion Board</h3>
+                                  <div class="dropdown no-arrow">
+                                      <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                      </a>
+                                      <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                          aria-labelledby="dropdownMenuLink">
+                                          <div class="dropdown-header">Options:</div>
+                                          <a class="dropdown-item" href="#">Filter By</a>
+                                          <a class="dropdown-item" href="#">Sort By</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">Something else here</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- Card Body -->
+                              <div class="card-body">
+                                  <div class="panel-content panel-activity">
+                                      <form action="#" class="panel-activity__status" autocomplete="off">
+                                          <div class="subscribe">
+                                              <form action="forms/notify.php" method="post" role="form" class="search" autocomplete="off">
+                                                <div class="subscribe-form">
+                                                  <input type="text" name="text" required>
+                                                  <ul class="results" >
+                                                    <li><a href="">Food<br /><span>New Outlets</span></a></li>
+                                                    <li><a href="">Events<br /><span>Scheduled in Neighbourhood</span></a></li>
+                                                    <li><a href=""> Listings<br /><span></span></a></li>
+                                                        <li><a href="">Essentials</a></li>
+                                                  </ul>
+                                                  <input type="submit" value="Search">
+                                                </div>
+                                              </form>
+  
+                                      </form>
+                                      <ul class="panel-activity__list">
+                                          <li class="activity">
+                                              <i class="activity__list__icon fa fa-question-circle-o"></i>
+                                              <div class="activity__list__header">
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                                                  <a href="#">John Doe</a><br>Block:A Floor: 2 Room 12 <br><a href="#">How can I change my annual reports for the better effect?</a>
+                                              </div>
+                                              <div class="activity__list__body entry-content">
+                                                  <p>
+                                                      <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Voluptatibus ab a nostrum repudiandae dolorem ut quaerat veniam asperiores, rerum voluptatem magni dolores corporis!
+                                                      <em>Molestiae commodi nesciunt a, repudiandae repellendus ea.</em>
+                                                  </p>
+                                              </div>
+                                              <div class="activity__list__footer">
+                                                  <a href="#"> <i class="fa fa-thumbs-up"></i>123</a>
+                                                  <a href="#"> <i class="fa fa-comments"></i>23</a>
+                                                  <span> <i class="fa fa-clock"></i>2 hours ago</span>
+                                              </div>
+                                          </li>
+                                          <li class="activity">
+                                              <i class="activity__list__icon fa fa-question-circle-o"></i>
+                                              <div class="activity__list__header">
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                                                  <a href="#">John Doe</a><br>Block:A Floor: 2 Room 12 <br><a href="#">How can I change my annual reports for the better effect?</a>
+                                              </div>
+                                              <div class="activity__list__body entry-content">
+                                                  <blockquote>
+                                                      <p>
+                                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ab a nostrum repudiandae dolorem ut quaerat veniam asperiores, rerum voluptatem magni dolores corporis! Molestiae commodi nesciunt a,
+                                                          repudiandae repellendus ea.
+                                                      </p>
+                                                  </blockquote>
+                                              </div>
+                                              <div class="activity__list__footer">
+                                                  <a href="#"> <i class="fa fa-thumbs-up"></i>123</a>
+                                                  <a href="#"> <i class="fa fa-comments"></i>23</a>
+                                                  <span> <i class="fa fa-clock"></i>2 hours ago</span>
+                                              </div>
+                                          </li>
+                                          <li class="activity">
+                                              <i class="activity__list__icon fa fa-image"></i>
+                                              <div class="activity__list__header">
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                                                  <a href="#">John Doe</a><br>Block:A Floor: 2 Room 12 <br> Uploaded 4 Image: <a href="#">Office Working Time</a>
+                                              </div>
+                                              <div class="activity__list__body entry-content">
+                                                  <ul class="gallery">
+                                                      <li>
+                                                          <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                                                      </li>
+                                                      <li>
+                                                          <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                                                      </li>
+                                                      <li>
+                                                          <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" />
+                                                      </li>
+                                                      <li>
+                                                          <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="" />
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                              <div class="activity__list__footer">
+                                                  <a href="#"> <i class="fa fa-thumbs-up"></i>123</a>
+                                                  <a href="#"> <i class="fa fa-comments"></i>23</a>
+                                                  <span> <i class="fa fa-clock"></i>2 hours ago</span>
+                                              </div>
+                                          </li>
+                                          <li class="activity">
+                                              <i class="activity__list__icon fa fa-question-circle-o"></i>
+                                              <div class="activity__list__header">
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" />
+                                                  <a href="#">John Doe</a><br>Block:A Floor: 2 Room 12 <br> <a href="#">How can I change my annual reports for the better effect?</a>
+                                              </div>
+                                              <div class="activity__list__body entry-content">
+                                                  <blockquote>
+                                                      <p>
+                                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ab a nostrum repudiandae dolorem ut quaerat veniam asperiores, rerum voluptatem magni dolores corporis! Molestiae commodi nesciunt a,
+                                                          repudiandae repellendus ea.
+                                                      </p>
+                                                  </blockquote>
+                                              </div>
+                                              <div class="activity__list__footer">
+                                                  <a href="#"> <i class="fa fa-thumbs-up"></i>123</a>
+                                                  <a href="#"> <i class="fa fa-comments"></i>23</a>
+                                                  <span> <i class="fa fa-clock"></i>2 hours ago</span>
+                                              </div>
+                                          </li>
+                                          <li class="activity">
+                                              <i class="activity__list__icon fa fa-lightbulb-o"></i>
+                                              <div class="activity__list__header">
+                                                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                                                  <a href="#">John Doe</a><br>Block:A Floor: 2 Room 12 <br> bookmarked a page: <a href="#">Awesome Idea</a>
+                                              </div>
+                                              <div class="activity__list__footer">
+                                                  <a href="#"> <i class="fa fa-thumbs-up"></i>123</a>
+                                                  <a href="#"> <i class="fa fa-comments"></i>23</a>
+                                                  <span> <i class="fa fa-clock"></i>2 hours ago</span>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <!-- <div class="chart-area">
+                                      <canvas id="myAreaChart"></canvas>
+                                  </div> -->
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+
+
+              </div>
+              <!-- /.container-fluid -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CCafe</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by CC-Team</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  
+  
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

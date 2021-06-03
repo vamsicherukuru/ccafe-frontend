@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/cart.css">
+        <script src="assets/js/cart.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap" rel="stylesheet">
+  
+
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/main.js">    </script>
+    </head>
+    <body>
+    <!-- ======= Side Panel======= -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="Homepage_after_login.html">HOME</a>
+      <a href="Giveback.html">GIVE BACK</a>
+      <a href="Marketplace.html">MARKETPLACE</a>
+      <a href="Ecommerce.html">E-COMMERCE</a>
+      <a href="Neighbourhood.html">NEIGHBOURHOOD</a>
+      <a href="Common_interest.html">COMMON INTEREST</a>
+    </div>
+
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+    
+          <!--<h1 class="logo mr-auto"><a href="index.html">CCafe</a></h1>-->
+          <a href="Homepage_after_login.html" class="logo mr-auto"><img src="assets/img/cclogo.png" alt="" class="img-fluid"></a>
+          <a href="#" class=" mr-auto burger " style="left:-36%;" onclick="openNav()">
+            <span></span></a>
+  
+              <nav class="nav-menu ">
+                <ul>
+                  <li>
+                    <input type="text" placeholder="Search Community Cafe Marketplace" class="searchbar"/ >
+                    <div class="search"></div>
+                  </li>
+                  <li><a href="Cart.html"><i class="fa fa-shopping-cart circle-icon" style="color:white"></i> </a>   </li>
+                  <li><a href="Profile.html"><i class="fa fa-user circle-icon" style="color:white"></i>         </a>    </li>      
+                </ul>
+              <div class="dropdown-content">  
+                <div class="row">
+                  <div class="column" style="background-color: #1D3558;">
+                    <h3>Home Business</h3>
+                    <a href="#">Food</a>
+                    <a href="#">Fitness</a>
+                    <a href="#">Arts & Crafts</a>
+                  </div>
+                  <div class="column" style="background-color: #FF5757;">
+                    <h3>Domestic</h3>
+                    <a href="#">Cook</a>
+                    <a href="#">Driver</a>
+                    <a href="#">Gardener</a>
+                  </div>
+                </div>
+              </div>
+              
+            </nav><!-- .nav-menu -->          
+      </div>
+    </header><!-- End Header -->
+
+     <div class="container mt-5">
+        <div class="row pt-5">
+          <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 cart-items">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="row pt-3 pb-3">
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+                        <h2> My Cart</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card-body">
+                      <div class="row pb-3 ">
+                        <div class="col-xl-4 col-lg-2 col-md-3 col-sm-3 col-12 pt-5 text-center">
+                          <img src="assets/img/food-img/b_1.png" height="200px">
+                        <div class="text-left">
+                            <select name="Qunatity" class="custom-select mt-2 first">
+                              <option selected>1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5 cart-details">
+                          <p>Item Name:&nbsp;Chilli Burger</p>
+                          <p>Seller:&nbsp;Laxmipati</p>
+                          <p>Price:&nbsp;&#8377;300.00</p>
+                          <p><a href="#/" class="get-started-btn" >REMOVE</a></p>
+                        </div>
+                      </div>
+
+
+                      <div class="row pb-3">
+                        <div class="col-xl-4  col-lg-2 col-md-3 col-sm-4 col-12 pt-5 text-center">
+                          <img src="assets/img/food-img/p_2.png" height="200px">
+                          <div class="text-left">
+                          <select name="Qunatity" class="custom-select mt-2 second">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5 pt-5 cart-details">
+                          <p>Item Name:&nbsp;Pizza</p>
+                          <p>Size:&nbsp;Medium</p>
+                          <p>Seller:&nbsp;Fabindia</p>
+                          <p>Price:&nbsp;&#8377;480</p>
+                          <p><a href="#/" class="get-started-btn" >REMOVE</a></p>
+                      </div>
+                      </div>
+                      
+
+
+                      <div class="row pb-3">
+                        <div class="col-xl-4  col-lg-2 col-md-3 col-sm-4 col-12 pt-5 text-center">
+                          <img src="assets/img/food-img/b_3.png" height="200px">
+                          <div class="text-left">
+                          <select name="Qunatity" class="custom-select mt-2 second">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-10 col-md-8 col-sm-8 col-12 pt-5 pt-5 cart-details">
+                          <p>Item Name:&nbsp;Burger</p>
+                          <p>Seller:&nbsp;Fabindia</p>
+                          <p>Price:&nbsp;&#8377;203</p>
+                          <p><a href="#/" class="get-started-btn" >REMOVE</a></p>
+                      </div>
+                      </div>    
+
+
+                      <div class="row">
+                        <div class="col pr-5 text-right">
+                          <p><button style="text-transform: uppercase;padding:2% 5%;background-color: tomato;color:white;border-color:transparent" data-toggle="collapse" data-target="#collapseTwo,#payment-option"><a href="payment.html" style="color: white;">Place Order</a></button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-4">
+            <div class="container">
+              <div class="card">
+                <div class="card-header">PRICE DETAILS</div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col text-left">
+                      Price(3) :
+                    </div>
+                    <div class="col text-right">
+                      &#8377;1,460
+                    </div>
+                  </div>
+                    <div class="row pt-3">
+                      <div class="col-7 text-left ">
+                        Delivery Charges:
+                      </div>
+                      <div class="col text-right">
+                        Free
+                      </div>
+                    </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col text-left">
+                      Total Amount :
+                    </div>
+                    <div class="col text-right">
+                      &#8377;1,460
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+      </div>
+
+  </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+
+        <div class="container footer-bottom clearfix">
+          <div class="copyright">
+            &copy; Copyright <strong><span>CCafe</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by CC-Team</a>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+
+
+      <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+      <div id="preloader"></div>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script>
+        AOS.init({
+          once:true,
+          duration:1000,
+        });
+      </script>
+    </body>
+</html>
