@@ -38,9 +38,6 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -135,8 +132,8 @@
 
         <div class="section-title">
           <h2>Common Interest</h2>
-          <p>Create or Join a group now!
-            </p>
+          <h4 style="color: #1d3558;">Create or Join a group now!
+            </h4>
         </div>
   
         <div class="tabs">
@@ -156,60 +153,66 @@
           </div>
           <div class="tab-content">
             <div role="tabpanel" class="group tab-pane active" id="create">
-              <form class="create-group">
+              <div id="create-container">
 
+               <form name="form1" id="form1" action="/action_page.php">
+                    Category <select name="subject" id="subject">
+                        <option value="" selected="selected">Select subject</option>
+                      </select>
+                      <br><br>
+                    Speicality <select name="topic" id="topic">
+                        <option value="" selected="selected">Please select subject first</option>
+                      </select>
+                      <br>  
+                    </form>
 
-                <label for="fname">Category</label>
+              <table class="create-group">
+                <tr>
+                  <td>Group Name </td>
+                  <td><input type="text"></td> 
+                </tr>
+
+                <tr>
+                  <td>Description</td>
+                  <td> <input type="text" name="" id=""></td>
+                </tr>
+
+                <tr>
+                  <td>Group Logo</td>
+                  <td> <button> Choose a file</button> 
+                  <p>No file chosen</p>
+                </tr>
+
+                <tr>
+                  <td>People</td>
+                  <td> <input type="text"></td>
+                </tr>
                 
-                <div class="container">
-                  <div class="row">
-                    <div class="dropdown">
-                      <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary" data-target="#" href="#">
-                                Dropdown <span class="caret"></span>
-                            </a>
-                      <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                        <li class="divider"></li>
-                        <li class="dropdown-submenu">
-                          <a tabindex="-1" href="#">Sports</a>
-                          <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">Cricket</a></li>
-                            <li><a href="#">Football</a></li>
-                            <li><a href="#">Basket Ball</a></li>
-                          </ul>
-                        </li>
-                        <li class="divider"></li>
-                        <li class="dropdown-submenu">
-                          <a tabindex="-1" href="#">Art</a>
-                          <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">Graphic Designing</a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="#">Painting</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-                  <label for="fname">Group name:</label>
-                <input type="text" id="fname" name="fname" ><br>
-                <label for="lname">Description:</label>
-                <input type="text" id="lname" name="lname" ><br>
-                <label for="lname">Group Logo:</label>
-                <button>Choose Photo</button><span>No file chosen</span><br>
-                <label for="lname">People:</label>
-                <input type="text" id="lname" name="lname" ><br><br>
-                <button>Submit</button>   
-              </form>
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" class="submit-host">Submit</button></td>
+                </tr>        
+              </table>
+              </div>
             </div>
             <div role="tabpanel" class="group tab-pane" id="join">
-              <form class="join-group">
-                <label for="fname">Hey Username</label><br>
-                <label for="lname">Enter the group name you want to </label>
-                <input type="text" id="lname" name="lname" ><br><br>
-                <button>Submit</button>    
-              </form>
+              <table class="join-group">
+                <tr>
+                  <td> Hey Username </td>
+                </tr>
+
+                <tr>
+                  <td> Enter the name of the group to join</td>
+                </tr>
+
+                <tr>
+                  <td> Name: </td>
+                  <td> <input type="text" name="" id=""></td> 
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center"><button type="submit" class="submit-host">Request to join  </button></td>
+                </tr>        
+              </table>
             </div>
           </div>
         </div>
@@ -227,8 +230,8 @@
 
         <div class="section-title">
           <h2>Common Interest</h2>
-          <p>Check out the People's Interest
-            </p>
+          <h4 style="color: #1d3558;">Check out the People's Interest
+            </h4>
         </div>
   
         <div class="tabs">

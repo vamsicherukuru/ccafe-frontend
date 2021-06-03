@@ -206,7 +206,6 @@ i .fas fa-bars {
   background-color: #1d3558;
   border: none;
   font-size: 20px;
-  margin: 0;
 }
 .nav-tabs .nav-link {
   background-color: #acd9ff;
@@ -215,7 +214,11 @@ i .fas fa-bars {
   font-size: 20px;
   transition: all 0.2s ease-in;
   border-radius: 0;
-  margin: 0;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #ff5757;
+  transition: 0s;
 }
 
 @media all and (max-width: 768px) {
@@ -278,7 +281,6 @@ i .fas fa-bars {
 
 .tab-content {
   /* background-color: purple; */
-  margin-top: 0;
   transition: all 0.2s ease-in;
 }
 
@@ -290,7 +292,6 @@ i .fas fa-bars {
   flex-direction: row;
   justify-content: space-around;
   transition: all 0.2s ease-in;
-  margin-top: 0;
 }
 
 .icon-boxes {
@@ -658,95 +659,99 @@ span.feed-title {
   color: white;
 }
 
-div.group {
-  margin: auto;
-  width: 60%;
-  display: inline-block;
-  padding: 20px;
+/* ====Create Group Table======= */
+div #create-container {
+  padding: 50px;
+  display: block;
 }
-div.group form {
-  width: 100%;
-  /* border: 3px solid #73ad21; */
-  padding: 0px;
+div.group table input,
+button {
+  margin-top: 15px;
+  margin-left: 7px;
 }
 
-.create-group,
-.join-group {
-  font-family: Advent Pro;
-  font-size: 18pt;
+.group table tr td {
+  padding: 15px;
+  font-size: 26px;
   color: white;
 }
-.group input {
-  margin-top: 10px;
-  position: relative;
-  margin-left: 20px;
-  width: 80%;
-}
 
-.group form label {
-  margin: 10px;
-}
-
-.group form button {
-  margin: 10px;
-  border: none;
-  border-radius: 25px;
+.group table input {
+  height: 40px;
+  width: 45vw;
+  margin-left: 17%;
+  align-self: center;
   color: black;
-  padding: 10px;
-  font-size: 14pt;
+  font-size: 22px;
+}
+
+.group table input:focus {
+  outline: none;
+}
+
+@media (max-width: 500px) {
+  .group table td {
+    padding: 5px !important;
+    font-size: 18px !important;
+  }
+
+  .group table input {
+    height: 25px;
+    margin-left: 10%;
+    align-self: center;
+    font-size: 12px;
+  }
+}
+
+/* ======Category dropdown======== */
+
+.group form {
+  padding: 15px;
+  font-size: 26px;
+  color: white;
+  margin-right: 15px;
+}
+
+#create-container select {
+  margin-left: 70px;
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+}
+#create-container option {
+  color: #001636;
+}
+#create-container input {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  border: none;
+}
+
+#create-container button {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  border: none;
   background-color: #acd9ff;
 }
 
-.group form button:hover {
-  opacity: 0.8;
+#create-container button:hover {
+  background-color: #ff5757;
+  color: white;
 }
 
-/* =====DROPDOWN BUTTON====== */
-
-.dropdown-submenu {
-  position: relative;
+div #join input {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  border: none;
 }
 
-.dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
+div #join button {
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+  border: none;
+  background-color: #acd9ff;
 }
 
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown-submenu > a:after {
-  display: block;
-  content: ' ';
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-
-.dropdown-submenu:hover > a:after {
-  border-left-color: #fff;
-}
-
-.dropdown-submenu.pull-left {
-  float: none;
-}
-
-.dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
+div #join button:hover {
+  background-color: #ff5757;
+  color: white;
 }
