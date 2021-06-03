@@ -673,6 +673,113 @@ input[type="search"] {
     color: #000;
     outline: none;
   }
+/*--------------------------------------------------------------
+# Hero Tabs Section
+--------------------------------------------------------------*/
+
+.nav-menu .profile {
+  position: fixed;
+  right: 9%;
+  top: -3px;
+  font-size: 45px;
+}
+
+.nav-tabs .nav-link.active {
+  /* background-color: #ff5757; */
+  color: white;
+  background-color: #1d3558;
+  border: none;
+  font-size: 20px;
+  margin: 0;
+}
+.nav-tabs .nav-link {
+  background-color: #acd9ff;
+  color: #1d3558;
+  border: none;
+  font-size: 20px;
+  transition: all 0.2s ease-in;
+  border-radius: 0;
+  margin: 0;
+}
+
+@media all and (max-width: 768px) {
+  .nav-tabs {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.99px;
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 487px) {
+  .nav-tabs .nav-link {
+    padding: 2px 2px 6px 2px;
+    text-align: center;
+    font-size: 12px;
+    /* border-radius: 20px; */
+  }
+  .nav-tabs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    padding-bottom: 1.99px;
+  }
+  .nav-tabs .nav-link.active {
+    padding-bottom: 10px;
+  }
+  .nav-tabs {
+    height: 40px;
+  }
+}
+@media all and (max-width: 412px) {
+  .nav-tabs .nav-link {
+    padding: 2px 2px 12px 2px;
+    text-align: center;
+    /* border-radius: 20px; */
+    font-size: 4.8vw;
+  }
+  .nav-tabs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.99px;
+  }
+  .nav-tabs .nav-link.active {
+    padding-bottom: 10px;
+  }
+  .nav-tabs {
+    height: 40px;
+  }
+}
+
+.nav-tabs {
+  margin-bottom: -2px;
+}
+
+.tab-content {
+  /* background-color: purple; */
+  margin-top: 0;
+  transition: all 0.2s ease-in;
+}
+
+.tab-content .tab-pane.active {
+  background-color: #1d3558;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: all 0.2s ease-in;
+  margin-top: 0;
+}
+
+.icon-boxes {
+  width: 100%;
+}  
   @media (max-width:1000px) {
     ul.tabs li
     {
@@ -788,6 +895,7 @@ input[type="search"] {
     margin: 5px 0 0;
     padding-bottom: 5px;
   }
+
   
   /* Accordion 
   --------------------------------------------------------------  */
