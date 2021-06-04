@@ -67,7 +67,7 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="Login.html" class="get-started-btn">LOGOUT</a>
+      <a href="Homepage_before_login.html" class="get-started-btn">LOGOUT</a>
 
     </div>
   </header><!-- End Header -->
@@ -99,8 +99,7 @@
           </tr>
           
           <tr>
-            <td></td>
-            <td  colspan="2" style="float:center;"> <button class="get-started-btn">Request To Join</button>
+            <td  colspan="2" align="center"> <button class="get-started-btn">Request To Join</button>
             </td>
             </tr>
           </table>
@@ -120,10 +119,11 @@
       </div>
   
       <div class="container-fluid">
+        <form>
         <table>
         <tr>
           <td> <p>Area Name :</p> </td>
-          <td> <select name="communityName" class="get-started-btn" id="communityName">
+          <td> <select name="AName" class="get-started-btn" id="communityName" required>
             <option selected> ----------</option>
             <option value="State_k">Kormangala-560024</option>
             <option value="Karnataka">JPnagar</option>
@@ -132,7 +132,7 @@
         </tr>
         <tr>
         <td><p>Pincode:</p></td>
-        <td ><select  name="communityPincode" class="get-started-btn" id="communityPincode">
+        <td ><select  name="CPincode" class="get-started-btn" id="communityPincode" required>
             <option selected> ----------</option>
             <option value="Goa">560024</option>
             <option value="Karnataka">560036</option>
@@ -143,17 +143,18 @@
 
         <tr>
         <td><p>Community Name:</p></td>
-        <td><input type="text"class="form-control"></textarea></td>
+        <td><input type="text"class="CName get-started-btn"/ required></td>
         </tr>
         
         <tr>
-          <td><p><input type="checkbox" required> &nbsp Terms and Conditions</p></td>
+          <td colspan="2"><p><input type="checkbox" class="terms" required> &nbsp Terms and Conditions</p></td>
         </tr>
         <tr>
           <td colspan="2" align="center"><button class="get-started-btn ">Create New Communtiy</button></td>
         </tr>
 
         </table>
+        </form>
 
       </div>
     </div>
@@ -226,20 +227,6 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
-  <!---Floating Search Icon-->
-  <div class="back-to-top event__search__floater ">
-    <div class="search__anchor">
-      <form id="event-search-form" action="get">
-            <input type="text" class="search__bar" placeholder="Pincode">
-        <input class="search__submit" type="submit">
-        <div class="search__toggler"></div>
-      </form>
-      
-      </div>
-    </div>
-
-    <!-----------End Of Floating Search Icon-->
 
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
   <div id="preloader"></div>
