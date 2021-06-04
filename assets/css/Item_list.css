@@ -1,0 +1,108 @@
+#items
+{
+  margin-top: 100px !important;
+}
+  
+  .card-deck 
+  {
+    margin: 0 -15px;
+    justify-content: space-between;
+    height: auto;
+  }
+  
+  .card-deck .card 
+  {
+    margin: 0 0 1rem;
+    border-radius: 25px;
+    transition: 2s;
+  }
+  
+  .card:hover
+{
+  background-color: #fd9f9f;
+  background:linear-gradient(to bottom, white, #fd9f9f);
+  transform: scale(1.05);
+}
+
+
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+  .card-img-top
+{
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-to-cart
+{
+  padding: 10px;
+  width: auto;
+  color: white !important; 
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.add-to-cart:hover
+{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+  
+  @media (min-width: 992px)
+  {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  }
+  
