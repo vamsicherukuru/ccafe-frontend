@@ -1,10 +1,15 @@
 #Join
 {
     margin-top: 100px;
-
 }
 
 #communityName
+{
+    min-width: 40%;
+    background-color: lightblue;
+}
+
+#communityPincode
 {
     min-width: 40%;
     background-color: lightblue;
@@ -14,5 +19,15 @@
 {
     background-color: #ADD8E6;
     background: linear-gradient(to bottom, #ADD8E6, #1d325e)
+}
+
+#Create td, #Create th
+{
+padding: 10px;
+}
+
+table,td,th
+{
+border:2px solid blue;
 }
 
