@@ -914,10 +914,7 @@ input[type="search"] {
     margin: 0;
     padding: 5px 15px;
    }
-  .accordion > h3:hover { 
-  }
-  .accordion > h3.active {
-  }
+
   .accordion > div {
     background: #f7f7f7;
     border-left: solid 1px #c4c4c4;

@@ -125,7 +125,16 @@ p
   width: 28px;
   height: 25px;
   cursor: pointer; 
-  position: relative;
+  position: absolute;
+  left:150px;
+}
+ 
+@media (max-width:600px) 
+{
+.burger 
+{
+  left:20px;
+}
 }
 
 .burger:before, .burger span, .burger:after {
