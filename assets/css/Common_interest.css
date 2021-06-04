@@ -308,6 +308,7 @@ i .fas fa-bars {
   padding: 0%;
   margin-left: auto;
   margin-right: auto;
+  /* z-index: 1; */
 }
 @media all and (max-width: 768px) {
   .tab-content .tab-pane.active {
@@ -338,7 +339,6 @@ i .fas fa-bars {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   width: fit-content;
-  pointer-events: none;
 }
 #hero .enter:hover {
   transform: scale(1.05);
@@ -467,7 +467,7 @@ div.interest-dropdown {
   margin-right: auto;
   position: absolute;
   top: 0;
-  z-index: -1;
+  opacity: 0;
   padding: 8px;
   display: block;
   text-align: center;
@@ -476,6 +476,7 @@ div.interest-dropdown a.category-links {
   font-size: 16pt;
   color: #1d3558;
 }
+
 div.interest-dropdown a.category-links:hover {
   font-size: 18pt;
   color: #ff5757;
@@ -489,10 +490,17 @@ div.enter-container {
   padding: 0%;
   margin-left: auto;
   margin-right: auto;
+  pointer-events: none;
 }
 .enter div.enter-container:hover {
   opacity: 0;
-  /* pointer-events: none; */
+  /* z-index: -1; */
+}
+
+div.interest-dropdown:hover {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
 }
 
 /*--------------------------------------------------------------
